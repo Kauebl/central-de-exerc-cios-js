@@ -1,6 +1,6 @@
 function exercicio01() {
 
-    
+
 
     let idade = prompt("Digite sua idade")
 
@@ -18,7 +18,7 @@ function exercicio01() {
 
 function exercicio02() {
 
-   
+
 
     let numero = prompt("Digite um numero")
 
@@ -55,7 +55,7 @@ function exercicio03() {
 
 function exercicio04() {
 
-   debugger;
+    debugger;
 
     let numero = prompt("Digite um numero")
 
@@ -73,33 +73,83 @@ function exercicio04() {
 
 
 
-} 
+}
 
 
-  
+
 
 function exercicio05() {
 
-    let idade = prompt("Digite sua idade")
 
-    if (idade  >= 0 && idade <= 12) {
+    let idade = prompt("Digite sua idade:");
 
-        
+
+    idade = parseInt(idade);
+
+
+    if (isNaN(idade) || idade < 0) {
+        alert("Idade inválida");
+    } else if (idade <= 12) {
+        alert("Você é uma Criança");
+    } else if (idade >= 13 && idade <= 17) {
+        alert("Você é um Adolescente");
+    } else if (idade >= 18) {
+        alert("Você é um Adulto");
+    }
+}
+
+function exercicio06() {
+
+
+    let numero = prompt("Digite um numero")
+
+
+    if (numero % 2 == 0) {
+
+        alert("O numero é par");
 
     } else {
 
-        if () {
+        alert("o numero é impar");
 
-
-
-        } else {
-
-
-        }
 
     }
 
 
 
+
 }
 
+
+function exercicio07() {
+
+
+    let n1 = print("Digite um numero")
+    let n2 = print("Digite um numero")
+    let operação = ("Digite a operação")
+
+    if (operação == "+") {
+
+        let resultado = n1 + n2
+        alert(resultado)
+
+    } else if (operação == "-") {
+
+        let resultado = n1 - n2
+        alert(resultado)
+
+
+    } else if (operação == "*") {
+
+        let resultado = n1 * n2
+        alert(resultado)
+
+    } else if (operação == "/") {
+
+        let resultado = n1 / n2
+        alert(resultado)
+    }
+
+}
+
+exercicio07()
