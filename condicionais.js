@@ -152,13 +152,13 @@ function exercicio07() {
 
 }
 
-function maiorNumero() {
-    // Solicitar ao usuário os três números
+function exercicio08() {
+    
     let num1 = parseFloat(prompt("Digite o primeiro número:"));
     let num2 = parseFloat(prompt("Digite o segundo número:"));
     let num3 = parseFloat(prompt("Digite o terceiro número:"));
 
-    // Determinar o maior número usando if-else
+   
     if (num1 >= num2 && num1 >= num3) {
         alert(`O maior número é: ${num1}`);
     } else if (num2 >= num1 && num2 >= num3) {
@@ -168,5 +168,5 @@ function maiorNumero() {
     }
 }
 
-// Chamar a função
-maiorNumero();
+
+

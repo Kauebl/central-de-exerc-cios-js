@@ -77,3 +77,48 @@ console.log(`A soma dos números de 1 a ${N} é: ${soma}`);
 alert(`A soma dos números de 1 a ${N} é: ${soma}`);
 
 
+
+function exercicio04() {
+
+
+    for (let i = 2; i <= 50; i += 2) {
+        console.log(i)
+
+    }
+
+
+}
+
+
+function exercicio05() {
+
+
+    let numeroAleatorio = Math.floor(Math.random() * (100 - 1) + 1)
+
+    let tentativa;
+
+    while (tentativa != numeroAleatorio) {
+
+        tentativa = prompt("Insira um numero")
+
+
+            if (numeroAleatorio > tentativa) {
+                alert("Numero aleatoria e maior")
+
+            } else if (numeroAleatorio < tentativa) {
+
+                alert("Numero aleatorio e menor")
+
+            } else {
+                alert("voce acertou")
+            }
+
+
+          
+
+        }
+       
+        
+        
+    }
+    exercicio05();
