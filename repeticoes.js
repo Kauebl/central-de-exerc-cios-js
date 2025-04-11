@@ -36,7 +36,7 @@ function exemploDowhile() {
 
 }
 
-function exercicio01() {
+function exercicio01rep() {
 
     for (let contador = 1; contador <= 10; contador++) {
 
@@ -46,7 +46,7 @@ function exercicio01() {
     }
 }
 
-function exercicio02() {
+function exercicio02rep() {
 
     let numero = prompt("Digite um numero")
 
@@ -59,26 +59,26 @@ function exercicio02() {
 }
 
 
-// Solicitar ao usuário que insira um número
-const N = parseInt(prompt("Digite um número:"));
+// // Solicitar ao usuário que insira um número
+// const N = parseInt(prompt("Digite um número:"));
 
-// Inicializar as variáveis
-let soma = 0;
-let i = 1;
+// // Inicializar as variáveis
+// let soma = 0;
+// let i = 1;
 
-// Usar um loop `while` para somar os números de 1 a N
-while (i <= N) {
-    soma += i;
-    i++;
-}
+// // Usar um loop `while` para somar os números de 1 a N
+// while (i <= N) {
+//     soma += i;
+//     i++;
+// }
 
-// Exibir o resultado
-console.log(`A soma dos números de 1 a ${N} é: ${soma}`);
-alert(`A soma dos números de 1 a ${N} é: ${soma}`);
+// // Exibir o resultado
+// console.log(`A soma dos números de 1 a ${N} é: ${soma}`);
+// alert(`A soma dos números de 1 a ${N} é: ${soma}`);
 
 
 
-function exercicio04() {
+function exercicio04rep() {
 
 
     for (let i = 2; i <= 50; i += 2) {
@@ -90,7 +90,7 @@ function exercicio04() {
 }
 
 
-function exercicio05() {
+function exercicio05rep() {
 
 
     let numeroAleatorio = Math.floor(Math.random() * (100 - 1) + 1)
@@ -121,4 +121,4 @@ function exercicio05() {
         
         
     }
-    exercicio05();
+   

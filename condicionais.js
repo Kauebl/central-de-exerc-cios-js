@@ -6,14 +6,15 @@ function exercicio01() {
 
     if (idade >= 18) {
 
-        console.log("Voce e maior de idade");
+        alert("Voce e maior de idade");
 
     } else {
 
-        console.log("Voce e menor de idade");
+        alert("Voce e menor de idade");
 
 
     }
+    gerarlog("Exercicio de condicionais 01 execultado " + new Date() .toLocaleDateString());
 }
 
 function exercicio02() {
@@ -24,14 +25,16 @@ function exercicio02() {
 
     if (numero >= 0) {
 
-        console.log("O numero e positivo")
+        alert("O numero e positivo")
 
     } else {
 
-        console.log("O numero e negativo")
+        alert("O numero e negativo")
 
     }
+    gerarlog("Exercicio de condicionais 02 execultado " + new Date() .toLocaleDateString());
 }
+
 
 function exercicio03() {
 
@@ -48,8 +51,9 @@ function exercicio03() {
         alert("Reprovado")
     }
 
-
+    gerarlog("Exercicio de condicionais 03 execultado " + new Date() .toLocaleDateString());
 }
+
 
 
 
@@ -71,9 +75,10 @@ function exercicio04() {
 
     }
 
-
-
+    gerarlog("Exercicio de condicionais 04 execultado " + new Date() .toLocaleDateString());
 }
+
+
 
 
 
@@ -96,7 +101,11 @@ function exercicio05() {
     } else if (idade >= 18) {
         alert("Você é um Adulto");
     }
+    gerarlog("Exercicio de condicionais 05 execultado " + new Date() .toLocaleDateString());
 }
+
+
+
 
 function exercicio06() {
 
@@ -116,17 +125,18 @@ function exercicio06() {
     }
 
 
-
-
+    gerarlog("Exercicio de condicionais 06 execultado " + new Date() .toLocaleDateString());
 }
+
+
 
 
 function exercicio07() {
 
 
-    let n1 = print("Digite um numero")
-    let n2 = print("Digite um numero")
-    let operação = ("Digite a operação")
+    let n1 = Number(prompt("Digite um numero"))
+    let n2 = Number(prompt("Digite um numero"))
+    let operação = prompt("Digite a operação")
 
     if (operação == "+") {
 
@@ -150,15 +160,18 @@ function exercicio07() {
         alert(resultado)
     }
 
+    gerarlog("Exercicio de condicionais 07 execultado " + new Date() .toLocaleDateString());
 }
 
+
+
 function exercicio08() {
-    
+
     let num1 = parseFloat(prompt("Digite o primeiro número:"));
     let num2 = parseFloat(prompt("Digite o segundo número:"));
     let num3 = parseFloat(prompt("Digite o terceiro número:"));
 
-   
+
     if (num1 >= num2 && num1 >= num3) {
         alert(`O maior número é: ${num1}`);
     } else if (num2 >= num1 && num2 >= num3) {
@@ -166,7 +179,17 @@ function exercicio08() {
     } else {
         alert(`O maior número é: ${num3}`);
     }
+    gerarlog("Exercicio de condicionais 08 execultado " + new Date() .toLocaleDateString());
 }
 
+
+function gerarlog(textoDoLog) {
+
+    let logscontainer = document.querySelector(".logscontainer");
+    let paragraph = document.createElement("p");
+    paragraph.innerHTML = textoDoLog;
+    logscontainer.appendChild(paragraph);
+
+}
 
 
